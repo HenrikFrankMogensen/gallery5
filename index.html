@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="compute-pressure=(self)">
+    <title>Kunde Gallery</title>
+  <script type="module" crossorigin src="./assets/index-BCH2HDBU.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BdfnEgpI.css">
+</head>
+
+<body>
+    <canvas class="webgl"></canvas>
+    <div class="info-picture1">
+        <div class="container">
+            <div class="text">
+                111 Dette er hvor tekst fremkommer! Der kan opsættes mere end en video. Disse kommer under hinanden.
+            </div>
+            <div class="close-button" id="close-button"><img src="./img/closeButton.png" width="20">
+            </div>
+        </div>
+        <div class="container">
+            <div class="m1"></div>
+            <div>
+                <iframe 
+                    id="video" 
+                    class="video" 
+                    width="320" 
+                    height="180" 
+                    src="https://www.youtube-nocookie.com/embed/JwaiZNbps4M?si=iVIB9vgTOvMhecCh" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                
+                <!-- Jeg skal sørge for at ekstra videoer ikke kommer med i fremvisningen. så skal det nok virke uden fejl i konsollen. Prøv med denne kode: ?modestbranding=1&rel=0&showinfo=0 . Se forskellen i koden de 2 for oven. Den nuværende kode skulle være OK. -->
+                <!-- <video class="video" id="video" width="320" height="180" controls>
+                    <source src="./videos/0001-1020.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+            </div>
+            <div class="m2"></div>
+        </div>
+    </div>
+    <div class="info-picture2">
+        <div class="container">
+            <div class="text">
+                222 Dette er hvor tekst fremkommer! Der kan opsættes mere end en video. Disse kommer under hinanden.
+            </div>
+            <div class="close-button2" id="close-button2"><img src="./img/closeButton.png" width="20">
+            </div>
+        </div>
+        <div class="container">
+            <div class="m1"></div>
+            <div>
+                <iframe 
+                    id="video2" 
+                    class="video2" 
+                    width="320" 
+                    height="180" 
+                    src="https://www.youtube-nocookie.com/embed/I5RQU0jmYWY?rel=0" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <!-- <video class="video2" id="video2" width="320" height="180" controls>
+                    <source src="./videos/0001-1020.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+            </div>
+            <div class="m2"></div>
+        </div>
+    </div>
+    <div class="info-picture3">
+        <div class="container">
+            <div class="text">
+                333 Dette er hvor tekst fremkommer! Der kan opsættes mere end en video. Disse kommer under hinanden.
+            </div>
+            <div class="close-button3" id="close-button3"><img src="./img/closeButton.png" width="20">
+            </div>
+        </div>
+        <div class="container">
+            <div class="m1"></div>
+            <div>
+                <iframe 
+                    id="video3" 
+                    class="video3" 
+                    width="320" 
+                    height="180" 
+                    src="https://www.youtube-nocookie.com/embed/I5RQU0jmYWY?rel=0" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <!-- <video class="video3" id="video3" width="320" height="180" controls>
+                    <source src="./videos/0001-1020.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+            </div>
+            <div class="m2"></div>
+        </div>
+    </div>
+    <div class="info-picture4">
+        <div class="container">
+            <div class="text">
+                444 Dette er hvor tekst fremkommer! Der kan opsættes mere end en video. Disse kommer under hinanden.
+            </div>
+            <div class="close-button4" id="close-button4"><img src="./img/closeButton.png" width="20">
+            </div>
+        </div>
+        <div class="container">
+            <div class="m1"></div>
+            <div>
+                <iframe 
+                    id="video4" 
+                    class="video4" 
+                    width="320" 
+                    height="180" 
+                    src="https://www.youtube-nocookie.com/embed/I5RQU0jmYWY?rel=0" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <!-- <video class="video4" id="video4" width="320" height="180" controls>
+                    <source src="./videos/0001-1020.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+            </div>
+            <div class="m2"></div>
+        </div>
+    </div>
+    <!--<iframe id="yt-video-iframe" width="630" height="354" src="https://www.youtube.com/embed/C_JiP-j2FwM?autoplay=1&loop=1&enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>note the &enablejsapi=1 --> 
+    <!--<script type="text/javascript">
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+          var player;
+          // this function will be called automatically !
+          function onYouTubeIframeAPIReady() {
+                  console.log("this func is automatically called");
+              player = new YT.Player('yt-video-iframe', {
+                  events: {
+                      'onReady': onPlayerReady,
+                      'onStateChange': onPlayerStateChange,
+                      'onError': onPlayerError,
+                  }
+              });
+          }
+          
+          function onPlayerReady(event) {
+              console.log('video is ready');
+          }
+      
+          function onPlayerStateChange(event) {
+              console.log(event.data);
+          }
+          function onPlayerError(event) {
+              console.log(event.data);
+          }    
+      </script>-->
+</body>
+
+</html>
